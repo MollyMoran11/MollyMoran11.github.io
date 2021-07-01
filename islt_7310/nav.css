@@ -1,0 +1,17 @@
+body {
+    margin: 20px;
+    padding: 0;
+    font-family: 'Century Gothic';
+}
+
+.nav {
+    list-style: none;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    border: solid;
+}
+
+.nav > li {
+    display: inline-block;
+    padding: 0 25px 0 25px;
+}
