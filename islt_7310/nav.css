@@ -1,8 +1,15 @@
+body {
+    margin: 20px;
+    padding: 0;
+    font-family: 'Century Gothic';
+}
 nav {
     list-style: none;
     text-align: center;
-    padding: 20px 0 20px 0;
+    padding: 10px 0 30px 0;
     border: solid;
+    border-color: purple;
+    border-width: 20px;
 }
 nav > li {
     display: inline-block;
@@ -26,7 +33,7 @@ nav ul li a{
     display: block;
     font-family: 'Century Gothic';
     font-weight: bold;
-    padding: 24px 14px;
+    padding: 10px 60px;
     text-decoration: none;
 }
 nav ul li ul {
@@ -36,12 +43,14 @@ nav ul li ul {
 }
 nav ul li:hover ul {
     display: block;
+    background-color: rgb(221, 61, 221);
 }
 nav ul li ul li {
     width: 180px;
 }
 nav ul li ul li a {
-    padding: 12px 14px;
+    padding: 10px 12px;
+    color: white;
 }
 nav ul li ul li a:hover {
     background-color: purple;
