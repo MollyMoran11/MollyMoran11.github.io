@@ -1,0 +1,53 @@
+.h1 {color: #0099cc;}
+.h1 {
+    font-family: Impact;
+    font-size: 40px;
+}
+main p:first-child::first-letter {font-weight: bold;}
+main p:first-child::first-letter {font-size: 150%}
+main p {text-indent: 2em;}
+
+.grid {
+display: grid;
+   grid-template-columns: 850px 850px 850px;
+   grid-auto-rows: 25px 25px;
+   grid-gap: 50px;
+   grid-template-areas:
+   "header header"
+   "sidebar content"
+   "sidebar content"
+}
+.Item1 {
+    grid-area: sidebar;
+}
+
+.Item2 {
+    grid-area: sidebar;
+    padding: 250px;
+    justify-content: left;
+}
+
+.Item3 {
+    grid-area: content;
+}
+
+.Item4 {
+    grid-area: sidebar;
+    padding: 300px;
+    justify-content: left;
+}
+footer {
+    grid-area: sidebar;
+    padding: 400px;
+}
+
+@media screen and (min-width: 780px)
+img {
+    width: 100%
+}
+
+@media screen and (max-width: 500px) {
+    .grid {
+        font-size: larger;
+    }
+}
