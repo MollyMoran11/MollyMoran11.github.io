@@ -12,19 +12,19 @@ display: grid;
    grid-template-columns: 850px 850px 850px;
    grid-auto-rows: 25px 25px;
    grid-gap: 50px;
+   height: 720px;
    grid-template-areas:
    "header header"
    "sidebar content"
-   "sidebar content"
+   "footer content"
 }
 .Item1 {
     grid-area: sidebar;
 }
 
 .Item2 {
-    grid-area: sidebar;
-    padding: 250px;
-    justify-content: left;
+    grid-area: footer;
+    padding: 150px;
 }
 
 .Item3 {
@@ -32,13 +32,12 @@ display: grid;
 }
 
 .Item4 {
-    grid-area: sidebar;
-    padding: 300px;
-    justify-content: left;
+    grid-area: footer;
+    padding: 200px;
 }
 footer {
-    grid-area: sidebar;
-    padding: 400px;
+    grid-area: footer;
+    padding: 300px;
 }
 
 @media screen and (min-width: 780px)
@@ -50,4 +49,12 @@ img {
     .grid {
         font-size: larger;
     }
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
