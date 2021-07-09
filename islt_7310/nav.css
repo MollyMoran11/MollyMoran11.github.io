@@ -41,7 +41,7 @@ nav ul li ul {
 }
 nav ul li:hover ul {
     display: block;
-    background-color: rgb(221, 61, 221);
+    background-color: #ffccff;
 }
 nav ul li ul li {
     width: 180px;
@@ -53,3 +53,46 @@ nav ul li ul li a {
 nav ul li ul li a:hover {
     background-color: purple;
 }
+@media screen and (max-width: 640px) {
+    nav a {
+        overflow: auto;
+        width: 100%;
+    }
+@media screen and (max-width: 640px) {
+    nav a {
+        float: left;
+        width: 100%;
+    }
+    #hamburger {
+        display: flex;
+        padding-left: 20px;
+        width: 26px;
+        float: left;
+        font-size: 2em;
+    }
+    nav ul, nav: active ul {
+        display: block;
+        position: absolute;
+        padding: 20px 20px 20px 0px;
+        top: 20px}
+    }
+    nav:hover ul {
+        display: block;
+    }
+    nav li {
+        text-align: center;
+        padding:o;
+        margin:0;
+    }
+    nav a {
+        text-decoration: none;
+        display: block;
+        border-top: none;
+        border-bottom: none;
+        padding: 15px 0px 15px 35px;
+        width: 240px;
+        margin-bottom: 2px;
+    }
+    nav ul li ul {
+        display: none;}
+    }
