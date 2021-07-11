@@ -53,23 +53,49 @@ nav ul li ul li a {
 nav ul li ul li a:hover {
     background-color: purple;
 }
+#hamnav {
+    width: 100%;
+}
+li {display: inline;
+text-align: center;
+padding: 10px 10px 10px 10px;}
+
+#hamburgeritems { display: flex; }
+
+#hamburgeritems a {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+#hamburgeritems a:hover { background: #ffccff; }
+
+#hamnav label, #hamburger {display: none;}
+
 @media screen and (max-width: 640px) {
-    nav a {
-        overflow: auto;
+
+    #hamburgeritems a{
+        box-sizing: border-box;
+        display: block;
         width: 100%;
+        border-top: 1px solid #333;
     }
-@media screen and (max-width: 640px) {
-    nav a {
-        float: left;
-        width: 100%;
+    #hamnav label {
+        display: inline-block;
+        padding: 10px;
+        font-style: normal;
+        font-size: 1.2em;
     }
-    #hamburger {
-        display: flex;
-        padding-left: 20px;
-        width: 26px;
-        float: left;
-        font-size: 2em;
+    li {display: inline;
+        text-align: center;
+        padding: 10px 10px 10px 10px;
     }
+    #hamburgeritems {display: none;}
+
+    #hamnav input:checked ~ #hamburgeritems {display: block;}
+    
     nav ul, nav: active ul {
         display: block;
         position: absolute;
