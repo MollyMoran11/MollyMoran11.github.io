@@ -78,7 +78,7 @@ padding: 10px 10px 10px 10px;}
 
 @media screen and (max-width: 640px) {
 
-    #hamburgeritems a{
+    #hamburgeritems a {
         box-sizing: border-box;
         display: block;
         width: 100%;
@@ -89,14 +89,19 @@ padding: 10px 10px 10px 10px;}
         padding: 10px;
         font-style: normal;
         font-size: 1.2em;
+        background-color: purple;
+        color: white;
     }
-    li {display: inline;
+    #hamburgeritems {display: block;}
+    #hamnav input:checked ~ #hamburgeritems {display: block;}
+    
+    li {display: inline-block;
         text-align: center;
         padding: 10px 10px 10px 10px;
     }
-    #hamburgeritems {display: none;}
-
-    #hamnav input:checked ~ #hamburgeritems {display: block;}
+    li ul li  {display: inline-block;
+        text-align: right;
+    }
 
     nav ul, nav: active ul {
         display: block;

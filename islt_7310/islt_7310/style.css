@@ -53,8 +53,13 @@ main p {text-indent: 2em;}
         display: block;
         width: 100%;
     }
-.wrapper {
+.grid {
   display: grid;
+  grid-template-columns: 900px 900px;
+  grid-template-rows: 25% 25% 25%;
+  grid-gap: 20px;
+  height: 900px;
+  width: 100%;
     grid-template-areas:
     "nav"
     "header"
@@ -64,28 +69,28 @@ main p {text-indent: 2em;}
 }
 #wrapper {width: 100%}
 .Item1 {
-    grid-area: content;
+    grid-area: nav;
     width: 50%;
     padding: 50px;
     text-align: left;
 }
 .Item2 {
-    grid-area: content;
+    grid-area: header;
     padding: 50px;
     text-align: left;
-    padding: 400px;
+    padding: 200px;
     margin: 0;
 }
 .Item3 {
     grid-area: sidebar;
-    height: auto;
+    height: 600px;
     max-width: 100%;
 }
 .Item4 {
     grid-area: footer;
     text-align: left;
-    padding: 500px;
-    width: 50%;
+    padding: 10px;
+    width:100%;
 }
 
 .grid {
