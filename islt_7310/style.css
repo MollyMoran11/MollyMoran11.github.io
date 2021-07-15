@@ -50,6 +50,38 @@ main p {text-indent: 2em;}
     width: 100%;
 }
 
+.box {
+    background-image: url(IconImages/FooterBackground.jpg);
+    background-size: cover;}
+}
+@media print {
+    {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    margin: 1in;
+    }
+
+    .h3 {
+        display: none;
+    }
+    .nav {
+        display: none;
+    }
+    .Item3 {
+        display: none;
+    }
+    .h1,
+    .p,
+    .blockquote,
+    .footer {
+        font: serif;
+        margin: 1in;
+        text-align: center;
+    }
+}
+
 @media only screen and (max-width: 640px) {
     header {
         position: relative;
@@ -113,28 +145,4 @@ nav li {
     width: 100%;
     padding: 15px 0;
     margin: 0;
-}
-
-@media print {
-    {
-    background: transparent !important;
-    color: #000 !important;
-    box-shadow: none !important;
-    text-shadow: none !important;
-    margin: 1in;
-    }
-    .h3,
-    .ul,
-    .nav,
-    .Item3 {
-        display: none;
-    }
-    .h1,
-    .p,
-    .blockquote,
-    .footer {
-        font: serif;
-        margin: 1in;
-        text-align: center;
-    }
 }
