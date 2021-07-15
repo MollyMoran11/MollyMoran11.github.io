@@ -12,6 +12,16 @@
                 background-size: cover;
                 text-align: center;
             }
+.picbig {
+    position: absolute;
+    width: 0px;
+    -webkit-transition: width 0.3s linear 0s;
+    transition: width 0.3s linear 0s;
+    z-index:10;
+}
+.pic:hover + .picbig {
+    width: 100px;
+}
             </style>
             <h1 class="LuckiestGuy">Molly Moran</h1>
             <h3><em>Third Grade Educator</em></h3>
@@ -57,10 +67,14 @@ Certificate certified by Department of Education</div>
 world." -Nelson Mandela</blockquote>
 <footer>
     <div class="box">
-            <a href="mailto:mnmc59@umsystem.edu">
-            <img src="IconImages/Email.png" alt="Emailicon">Email: mnmc59@umsystem.edu</a>
-            <div><img src="IconImages/Phone.png" alt="Phoneicon">888-888-8888</div>
-            <div>&copy;2021</div>
-            </div>
+    <form action="mailto:mnmc59@umsystem.edu" method="post" enctype="text/plain"></form>
+     <a href="mailto:mnmc59@umsystem.edu">
+     <img class="pic" src="IconImages/Email.png" alt="Emailicon">Email: mnmc59@umsystem.edu
+    <img class="picbig" src="IconImages/Email.png" alt="Emailicon"></a>
+         
+    <div></div><img class="pic" src="IconImages/Phone.png" alt="Phoneicon">888-888-8888
+    <img class="picbig" src="IconImages/Phone.png" alt="Phoneicon">
+    <div>&copy;2021</div>
+        </div>
         </footer>
 </html>
