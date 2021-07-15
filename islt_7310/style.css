@@ -131,11 +131,11 @@ nav li {
         margin: 1in;
         text-align: center;
     }
-    .h2
-    .h3
-    .li
-    .ul
-    .nav
+    .h2,
+    .h3,
+    .li,
+    .ul,
+    .nav,
     .Item3 {
         display: none;
     }
