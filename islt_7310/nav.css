@@ -77,12 +77,12 @@ padding: 10px 10px 10px 10px;}
 #hamnav label, #hamburger {display: none;}
 
 @media screen and (max-width: 640px) {
-
-    #hamburgeritems a {
-        box-sizing: border-box;
-        display: block;
-        width: 100%;
-        border-top: 1px solid #333;
+    #hamburger {
+        display: inline-block;
+        padding-left: 20px;
+        width: 26px;
+        float: left;
+        font-size: 2em;
     }
     #hamnav label {
         display: inline-block;
@@ -92,7 +92,23 @@ padding: 10px 10px 10px 10px;}
         background-color: purple;
         color: white;
     }
+    nav ul, nav:active ul {
+        display: none;
+        position: absolute;
+        padding: 20px 20px 20px 0px;
+        top: 20px;
+    }
     #hamburgeritems {display: block;}
+    nav:hover ul {
+        display: inline-block;
+        float: left;
+        background-color: #ffccff;
+        padding: 5px;
+        border-right: 0px;
+    }
+    nav:hover #mobileHide {
+        display: none;
+    }
     #hamnav input:checked ~ #hamburgeritems {display: block;}
     
     li {display: inline-block;

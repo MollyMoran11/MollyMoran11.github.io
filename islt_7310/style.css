@@ -123,6 +123,12 @@ nav li {
     text-shadow: none !important;
     margin: 1in;
     }
+    .h3,
+    .ul,
+    .nav,
+    .Item3 {
+        display: none;
+    }
     .h1,
     .p,
     .blockquote,
@@ -130,13 +136,5 @@ nav li {
         font: serif;
         margin: 1in;
         text-align: center;
-    }
-    .h2,
-    .h3,
-    .li,
-    .ul,
-    .nav,
-    .Item3 {
-        display: none;
     }
 }
