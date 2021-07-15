@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-               <meta charset="utf-8">
-               <title>Home Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Home Page</title>
+               <link rel="icon" type="image/x-icon" href="IconImages/favicon.png">
                <link rel="stylesheet" href="style.css">
                <link rel="stylesheet" href="nav.css">
+               <style>
+                .box {
+                    background-image: url(IconImages/PinkFooter.jpg);
+                    background-size: cover;
+                    text-align: center;
+                }
+                </style>
                <h1 class="h1">Welcome to Ms. Moran&rsquo;s Page</h1>
                <h2>Multiplication Guide</h2>
-<nav>
-<div class="wrapper">
-    <ul class=".nav">
-        <nav id="hamnav">
-        <label for="hamburger">&#9776;</label>
-        <input type="checkbox" id="hamburger"/>
-
-<div id="hamburgeritems">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="learn.html">Learn</a>
-            <ul>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
-                <li><a href="#">Link 3</a></li>
-                </ul>
-        <li><a href="reflection.html">Resources</a>
-        <li><a href="#contact.html">Contact</a></li>
-            </ul>
-            </div>
-    </nav>
+               <nav>
+                <ul class=".nav">
+                    <nav id="hamnav">
+               <label for="hamburger">&#9776;</label>
+               
+               <div id="hamburgeritems">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="learn.html">Learn</a>
+                   <ul id="mobileHide">
+                   <li><a href="#">Link 1</a></li>
+                   <li><a href="#">Link 2</a></li>
+                   <li><a href="#">Link 3</a></li>
+                        </ul>
+                   <li><a href="reflection.html">Resources</a>
+                   <li><a href="#contact.html">Contact</a></li>
+                       </ul>
+                   </div>
+                   </nav>
 
 <main>
  <p>Welcome to the classroom math website.</p>
@@ -43,5 +50,12 @@ order to go back and remind ourselves of the different steps and strategies that
 can be used when solving problems. By the end of the year, our goal is to have 
 mastered these four points before moving on to the next grade level.</p>
 </main>
-<footer>Email: mnmc59@umsystem.edu<div>&copy;2021</div></footer>
+<footer>
+    <div class="box">
+            <a href="mailto:mnmc59@umsystem.edu">
+            <img src="IconImages/Email.png" alt="Emailicon">Email: mnmc59@umsystem.edu</a>
+            <div><img src="IconImages/Phone.png" alt="Phoneicon">888-888-8888</div>
+            <div>&copy;2021</div>
+            </div>
+        </footer>
 </html>
