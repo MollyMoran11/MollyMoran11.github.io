@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <html lang="en-US">
+                <head>
+                <meta charset="utf-8">
+                   <title>Break Apart Strategy</title>
+                   <link rel="icon" type="image/x-icon" href="IconImages/favicon.png">
+                   <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="nav.css">
+            <style>
+            .box {
+                background-image: url(IconImages/PinkFooter.jpg);
+                background-size: cover;
+                text-align: center;
+            }
+.picbig {
+    position: absolute;
+    width: 0px;
+    -webkit-transition: width 0.3s linear 0s;
+    transition: width 0.3s linear 0s;
+    z-index:10;
+}
+.pic:hover + .picbig {
+    width: 100px;
+}
+            </style>
+                   <h1>Breaking Apart to Multiply</h1>
+                   <nav>
+                    <label for="hamburger">&#9776;</label>
+                     <ul>
+                       <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                   <li><a href="learn.html">Learn</a>
+                     <ul id="mobileHide">
+                    <li><a href="PictureStrategy.html">Pictures</a></li>
+                   <li><a href="SkipCounting.html">Skip Count</a></li>
+                    <li><a href="BreakApart.html">Break Apart</a></li>
+                      </ul>
+                     <li><a href="reflection.html">Resources</a>
+                   <li class="lastMobile"><a href="#contact.html">Contact</a></li>
+                 </ul>
+                </nav>
+    <main>
+     <p>
+        <div><strong>Strategy #3</strong></div>
+        <div>The last strategy a break apart stategy. Some problems we
+            find easier than others. We might have the problem of 8x8 and 
+            I do not want to draw all this out and the skip counting could take forever.
+            I can take one of the eights from the problem and break it apart to be 5 and 3.
+            These are easier numbers to multiply. So I can solve 8x5=40 and 8x3=24.
+            Then I just add the 40 and 24 together to get 64, so I know 8x8=64.
+        </div><br>
+        <img src="IconImages/MultiplicationExample3.jpg" alt="MultiplicationExample3" width="500" height="325">
+    </main>
+    <footer>
+        <div class="box">
+        <form action="mailto:mnmc59@umsystem.edu" method="post" enctype="text/plain"></form>
+         <a href="mailto:mnmc59@umsystem.edu">
+         <img class="pic" src="IconImages/Email.png" alt="Emailicon"><img class="picbig" src="IconImages/Email.png" alt="Emailicon">Email: mnmc59@umsystem.edu
+        </a>
+             
+        <div></div><img class="pic" src="IconImages/Phone.png" alt="Phoneicon"/><img class="picbig" src="IconImages/Phone.png" alt="Phoneicon"/>888-888-8888
+        <div>&copy;2021</div>
+            </div>
+            </footer>
+</html>
