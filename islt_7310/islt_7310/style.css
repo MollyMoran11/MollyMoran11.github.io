@@ -2,58 +2,76 @@
     font-family: LuckiestGuy;
     src:url(Luckiest_Guy.zip);
 }
-.h1 {color: #0099cc;}
+body {
+    font-family: "Century Gothic";
+    background-color: #F2E2FC;
+}
+.h1 {color: #67DBE9;}
 .h1 {
-    font-family: Impact;
+    font-family: Lobster;
+    src:url(Lobster.zip);
     font-size: 40px;
+    border: solid;
+    border-color:black;
+    background-color: ivory;
+    width: 40%;
+    padding: 10px;
+}
+.LuckiestGuy {
+    text-align: center;
+}
+.subtitle {
+    text-align: center;
+}
+.PictureText {
+    padding: 10px;
+}
+.SkipCountText {
+    padding: 10px;
+    text-align: center;
 }
 main p:first-child::first-letter {font-weight: bold;}
 main p:first-child::first-letter {font-size: 150%}
 main p {text-indent: 2em;}
 
 .container {
-    display: flex;
-    width: 500px;
+    display: grid;
+    width: 960px;
     margin: 0px auto;
-}
-.wrapper {
-    display: grid;
-    gap: 20px;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 10% 20% 40% 20% 10%;
+    gap: 25px 25px;
+    grid-auto-flow: row;
     grid-template-areas:
-    "header header"
-    "content sidebar"
-    "content sidebar"
+    "header image"
+    "nav nav"
+    "content content"
+    "extra other"
+    "footer footer"
 }
-.grid {
-    display: grid;
-       grid-template-columns: 900px 900px;
-       grid-template-rows: 25% 25% 25%;
-       grid-gap: 20px;
-       height: 900px;
-       width: 100%;
-       grid-template-areas:
-       "header nav"
-       "content sidebar"
-       "other sidebar"
-}
+
 .Item1 {
     grid-area: header;
 }
 .Item2 {
-    grid-area: content;
+    grid-area: extra;
+    padding: 30px;
 }
 .Item3 {
-    grid-area: nav;
+    grid-area: image;
 }
 .Item4 {
-    grid-area: other;
+    grid-area: content;
     width: 100%;
+}
+.Item5 {
+    grid-area: footer;
+    padding:20px;
 }
 
 .box {
     background-image: url(IconImages/FooterBackground.jpg);
     background-size: cover;}
-}
 @media print {
     {
     background: transparent !important;
@@ -61,12 +79,11 @@ main p {text-indent: 2em;}
     box-shadow: none !important;
     text-shadow: none !important;
     margin: 1in;
-    }
 
     .h3 {
         display: none;
     }
-    .nav {
+    .nav li {
         display: none;
     }
     .Item3 {
@@ -76,51 +93,40 @@ main p {text-indent: 2em;}
     .p,
     .blockquote,
     .footer {
-        font: serif;
+        font: sans-serif;
         margin: 1in;
         text-align: center;
     }
+@page {
+    margin: 1in;
 }
-
 @media only screen and (max-width: 640px) {
+    .container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 30% 30% 20% 10% 10%;
+        gap: 25px 25px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "header"
+    "nav"
+    "image"
+    "extra"
+    "footer"
+    }
+    
     header {
         position: relative;
         height: 40px;
         display: block;
         width: 100%;
     }
-.grid {
-  display: grid;
-  grid-template-columns: 900px 900px;
-  grid-template-rows: 25% 25% 25%;
-  grid-gap: 20px;
-  height: 900px;
-  width: 100%;
-    grid-template-areas:
-    "nav"
-    "header"
-    "content"
-    "sidebar"
-    "footer"
-}
-#wrapper {width: 100%}
 .Item1 {
-    grid-area: nav;
-    width: 50%;
-    padding: 50px;
-    text-align: left;
-}
-.Item2 {
-    grid-area: header;
-    padding: 50px;
-    text-align: left;
-    padding: 200px;
-    margin: 0;
+    font-size: smaller;
 }
 .Item3 {
-    grid-area: sidebar;
-    height: 600px;
-    max-width: 100%;
+   grid-area: image;
+    width: 100%;
 }
 .Item4 {
     grid-area: footer;
@@ -128,21 +134,7 @@ main p {text-indent: 2em;}
     padding: 10px;
     width:100%;
 }
-
 .grid {
         font-size: smaller;
         width: 100%;
-    }
-    img {
-        width: 50%;
-    }
-nav:hover ul {
-    display: block;
-}
-
-nav li {
-    text-align: center;
-    width: 100%;
-    padding: 15px 0;
-    margin: 0;
 }

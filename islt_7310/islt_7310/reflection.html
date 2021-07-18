@@ -4,6 +4,7 @@
   <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
                    <title>Resource Page</title>
+                   <link rel="icon" type="image/x-icon" href="IconImages/favicon.png">
                 <link rel="stylesheet" href="style.css">
                <link rel="stylesheet" href="nav.css">
                <style>
@@ -12,28 +13,34 @@
                     background-size: cover;
                     text-align: center;
                 }
+    .picbig {
+        position: absolute;
+        width: 0px;
+        -webkit-transition: width 0.3s linear 0s;
+        transition: width 0.3s linear 0s;
+        z-index:10;
+    }
+    .pic:hover + .picbig {
+        width: 100px;
+    }
                 </style>
         <h1>Multiplication Resources</h1>
         <h2>Additional Resources for Mastering Multiplication</h2>
-     <nav>
-      <ul class=".nav">
-    <nav id="hamnav">
-    <label for="hamburger">&#9776;</label>
-                   
-   <div id="hamburgeritems">
-   <li><a href="index.html">Home</a></li>
-   <li><a href="about.html">About</a></li>
-    <li><a href="learn.html">Learn</a>
-    <ul id="mobileHide">
-    <li><a href="#">Link 1</a></li>
-   <li><a href="#">Link 2</a></li>
-  <li><a href="#">Link 3</a></li>
-  </ul>
-  <li><a href="reflection.html">Resources</a>
-  <li><a href="#contact.html">Contact</a></li>
-   </ul>
- </div>
-      </nav>
+        <nav>
+            <label for="hamburger">&#9776;</label>
+             <ul>
+               <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+           <li><a href="learn.html">Learn</a>
+             <ul id="mobileHide">
+            <li><a href="PictureStrategy.html">Pictures</a></li>
+           <li><a href="SkipCounting.html">Skip Count</a></li>
+            <li><a href="BreakApart.html">Break Apart</a></li>
+              </ul>
+             <li><a href="reflection.html">Resources</a>
+           <li class="lastMobile"><a href="#contact.html">Contact</a></li>
+         </ul>
+        </nav>
     <main>
         <p>These are multiple resources that can be used in order to continue
             practicing the different multiplication strategies.
@@ -58,10 +65,13 @@
     </main>
     <footer>
         <div class="box">
-                <a href="mailto:mnmc59@umsystem.edu">
-                <img src="IconImages/Email.png" alt="Emailicon">Email: mnmc59@umsystem.edu</a>
-                <div><img src="IconImages/Phone.png" alt="Phoneicon">888-888-8888</div>
-                <div>&copy;2021</div>
-                </div>
+        <form action="mailto:mnmc59@umsystem.edu" method="post" enctype="text/plain"></form>
+         <a href="mailto:mnmc59@umsystem.edu">
+         <img class="pic" src="IconImages/Email.png" alt="Emailicon"><img class="picbig" src="IconImages/Email.png" alt="Emailicon">Email: mnmc59@umsystem.edu
+        </a>
+             
+        <div></div><img class="pic" src="IconImages/Phone.png" alt="Phoneicon"/><img class="picbig" src="IconImages/Phone.png" alt="Phoneicon"/>888-888-8888
+        <div>&copy;2021</div>
+            </div>
             </footer>
 </html>
