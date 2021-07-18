@@ -1,104 +1,81 @@
-body {
-    margin: 20px;
-    padding: 0;
-    font-family: 'Century Gothic';
+.active {
+    background-color: purple;
+    color: white;
 }
+#hamburger {
+    display: none;
+}
+
 nav {
-    list-style: none;
-    text-align: center;
-    padding: 10px 0 30px 0;
-    border: solid;
+   width: 100%;
+   height: 50px;
+   background-color: blueviolet;
 }
-nav > li {
-    display: inline-block;
-    padding: 0 25px 0 25px;
-}
-nav {
-    width: 100%;
-    height: 60px;
-    border: 2px;
-}
+
 nav ul {
     float: left;
 }
+
 nav ul li {
     float: left;
     list-style: none;
     position: relative;
-    text-decoration: none;
 }
+
+nav a:hover {
+    background-color: lightskyblue;
+}
+
 nav ul li a{
     display: block;
     font-family: 'Century Gothic';
     font-weight: bold;
-    padding: 10px 60px;
+    padding: 0px 10px 10px 15px;
     text-decoration: none;
+    color: white;
+    font-size: 20px;
 }
 nav ul li ul {
     display: none;
     position: absolute;
     padding: 10px;
+    background-color: purple;
+    border-radius: 0px 0px 4px 4px;
 }
+
 nav ul li:hover ul {
     display: block;
-    background-color: #ffccff;
 }
 nav ul li ul li {
-    width: 180px;
+    width 100px;
+    text-align: center;
+    border-radius: 4px;
 }
+
 nav ul li ul li a {
-    padding: 10px 12px;
-    color: white;
+    padding: 0px 12px;
 }
 nav ul li ul li a:hover {
-    display: block;
-    background-color: purple;
-    width: 100%;
+    background-color: #ffccff;
 }
-#hamnav {
-    width: 100%;
-}
-li {display: inline;
-text-align: center;
-padding: 10px 10px 10px 10px;}
-
-#hamburgeritems { display: flex; }
-
-#hamburgeritems a {
-    flex-grow: 1;
-    flex-basis: 0;
-    padding: 10px;
-    text-decoration: none;
-    text-align: center;
-}
-
-#hamburgeritems a:hover { background: purple; }
-
-#hamnav label, #hamburger {display: none;}
 
 @media screen and (max-width: 640px) {
     #hamburger {
         display: inline-block;
         padding-left: 20px;
+        color: white;
         width: 26px;
         float: left;
         font-size: 2em;
     }
-    #hamnav label {
-        display: inline-block;
-        padding: 10px;
-        font-style: normal;
-        font-size: 1.2em;
-        background-color: purple;
-        color: white;
-    }
+
     nav ul, nav:active ul {
         display: none;
         position: absolute;
         padding: 20px 20px 20px 0px;
         top: 20px;
     }
-    #hamburgeritems {display: block;}
+
     nav:hover ul {
         display: inline-block;
         float: left;
@@ -109,39 +86,29 @@ padding: 10px 10px 10px 10px;}
     nav:hover #mobileHide {
         display: none;
     }
-    #hamnav input:checked ~ #hamburgeritems {display: block;}
     
-    li {display: inline-block;
-        text-align: center;
-        padding: 10px 10px 10px 10px;
-    }
-    li ul li  {display: inline-block;
-        text-align: right;
-    }
-
-    nav ul, nav: active ul {
-        display: block;
-        position: absolute;
-        padding: 20px 20px 20px 0px;
-        top: 20px}
-    }
-    nav:hover ul {
-        display: block;
-    }
     nav li {
         text-align: center;
-        padding:o;
-        margin:0;
+        padding: 0;
+        margin: 0;
     }
+
+    nav>ul li {
+        text-align: center;
+        font-weight: bold;
+        float: left;
+    }
+    
     nav a {
         text-decoration: none;
-        display: block;
+        display: inline-block;
         border-top: none;
         border-bottom: none;
         padding: 15px 0px 15px 35px;
-        width: 240px;
+        width: 150px;
         margin-bottom: 2px;
     }
     nav ul li ul {
         display: none;}
     }
+}
