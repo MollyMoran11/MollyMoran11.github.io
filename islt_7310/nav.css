@@ -1,0 +1,117 @@
+.active {
+    background-color: purple;
+    color: white;
+}
+nav {
+   width: 100%;
+   height: 50px;
+   background-color: #cf51fe;
+   color: white;
+   text-align: center;
+   font-family: 'Archivo Narro', sans-serif;
+}
+
+nav ul {
+    display:inline-block;
+    text-align: center;
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+nav a:hover {
+    background-color: lightskyblue;
+}
+
+nav ul li a{
+    display: block;
+    font-family: 'Century Gothic';
+    font-weight: bold;
+    padding: 0px 10px 10px 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+nav ul li ul {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    background-color: purple;
+    border-radius: 0px 0px 4px 4px;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+nav ul li ul li {
+    width: 100px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+nav ul li ul li a {
+    padding: 10px 10px;
+}
+nav ul li ul li a:hover {
+    background-color: lightskyblue;
+}
+#hamburger {
+    display: none;
+}
+
+
+@media screen and (max-width: 640px) {
+    #hamburger {
+        display: inline-block;
+        padding-left: 20px;
+        color: white;
+        width: 26px;
+        float: left;
+        font-size: 2em;
+    }
+
+    nav ul, nav:active ul {
+        display: none;
+        position: absolute;
+        padding: 20px 20px 20px 0px;
+        top: 20px;
+    }
+
+    nav:hover ul {
+        display: inline-block;
+        float: left;
+        background-color: #ffccff;
+        padding: 5px;
+        border-right: 0px;
+    }
+    nav:hover #mobileHide {
+        display: none;
+    }
+    
+    nav li {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav>ul li {
+        text-align: center;
+        font-weight: bold;
+        float: left;
+    }
+
+    nav a {
+        text-decoration: none;
+        display: inline-block;
+        border-top: none;
+        border-bottom: none;
+        padding: 15px 0px 15px 35px;
+        width: 150px;
+        margin-bottom: 2px;
+    }
+    nav ul li ul {
+        display: none;}
+    }
