@@ -2,14 +2,13 @@
     background-color: purple;
     color: white;
 }
-#hamburger {
-    display: none;
-}
-
 nav {
    width: 100%;
    height: 50px;
-   background-color: blueviolet;
+   background-color: #cf51fe;
+   color: white;
+   text-align: center;
+   font-family: 'Archivo Narro', sans-serif;
 }
 
 nav ul {
@@ -56,8 +55,12 @@ nav ul li ul li a {
     padding: 0px 12px;
 }
 nav ul li ul li a:hover {
-    background-color: #ffccff;
+    background-color: lightskyblue;
 }
+#hamburger {
+    display: none;
+}
+
 
 @media screen and (max-width: 640px) {
     #hamburger {
@@ -98,7 +101,7 @@ nav ul li ul li a:hover {
         font-weight: bold;
         float: left;
     }
-    
+
     nav a {
         text-decoration: none;
         display: inline-block;
