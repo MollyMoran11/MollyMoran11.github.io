@@ -6,10 +6,10 @@
                    <link rel="icon" type="image/x-icon" href="IconImages/favicon.png">
                    <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="nav.css">
-        <style type="text/css">
+        <style>
         label {
             font-size: 20px;
-            font-style: bold;
+            font:bold;
             text-align: center;
         } 
         </style>
@@ -32,7 +32,7 @@
             </style>
                    <h1>Contact</h1>
                    <nav>
-                    <label for="hamburger">&#9776;</label>
+                    <label id="hamburger">&#9776;</label>
                      <ul>
                        <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -45,12 +45,11 @@
                      <li><a href="reflection.html">Resources</a>
                    <li class="lastMobile"><a href="Contact.html">Contact</a></li>
                  </ul>
-                </div>
                 </nav>
     <main>
-    <form action="mailto:mollymoran11@yahoo.com?Subject=Educational%20Website%20Content" method="POST">
+    <form action="mailto:mollymoran11@yahoo.com?Subject=Educational%20Website%20Content" target="_top" method="POST" enctype="text/plain">
         <div>
-        <label for="firstname">First Name</label>
+        <label id="firstname">First Name</label>
         <input type="text" name="name" id="name" required>
         </div>
         <div>
@@ -67,7 +66,6 @@
         </div>
         <button>Reset</button>
         <button>Submit</button>
-
     </form>
     </main>
     <footer>
@@ -82,5 +80,3 @@
             </div>
             </footer>
     </html>
-</body>
-</html>
