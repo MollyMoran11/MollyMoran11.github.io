@@ -50,10 +50,9 @@ table td {
     border: 1px solid black;
     padding: 4px 4px;
 }
-table tr:nth-child(even) td {
+table tr:nth-child(odd) td {
     background-color: #F58CE9;
 }
-
 .container {
     display: grid;
     width: 960px;
@@ -160,14 +159,19 @@ table {
         font-size: smaller;
         width: 100%;
 }
-}
-@media screen and (max-width: 640px) {
-    tr {
-        font-size: 12px;
+@media only screen and (max-width: 640px) {
+    th, td {
+        display: block;
     }
-    #table {
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
+    thead {
+        display: none;
+    }
+    tr td:first-child {
+        font-weight: bold;
+        font-size: 110%;
+        background-color: turquoise;
+    }
+    tbody td {
+        border-bottom-style: none;
     }
 }
