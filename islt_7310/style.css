@@ -34,23 +34,23 @@ main p:first-child::first-letter {font-weight: bold;}
 main p:first-child::first-letter {font-size: 150%}
 main p {text-indent: 2em;}
 
-table {
+.table {
     border-collapse: collapse;
 }
-table caption {
+.table caption {
     text-align: center;
 }
-table th{
+.table th{
     border: 1px solid black;
     text-align:center;
     color: black;
     background-color:turquoise;
 }
-table td {
+.table td {
     border: 1px solid black;
     padding: 4px 4px;
 }
-table tr:nth-child(odd) td {
+.table tr:nth-child(odd) td {
     background-color: #F58CE9;
 }
 .container {
@@ -124,8 +124,10 @@ table {
 @media only screen and (max-width: 640px) {
     .container {
         display: grid;
+        width: 640px;
+        margin: 0px auto;
         grid-template-columns: 100%;
-        grid-template-rows: 30% 30% 20% 10% 10%;
+        grid-template-rows: auto;
         gap: 25px 25px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -148,6 +150,8 @@ table {
 .Item3 {
    grid-area: image;
     width: 100%;
+    position: relative;
+    height: auto;
 }
 .Item4 {
     grid-area: footer;
@@ -160,8 +164,5 @@ table {
         width: 100%;
 }
 @media only screen and (max-width: 640px) {
-    table {
-        width: 100%;
-        height: auto;
-    }
+    .table {width: 100%;}
 }
