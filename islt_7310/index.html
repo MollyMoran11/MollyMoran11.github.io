@@ -49,6 +49,25 @@
                <li class="lastMobile"><a href="Contact.html">Contact</a></li>
              </ul>
             </nav>
+            <SCRIPT LANGUAGE="JavaScript">
+              <!--
+              
+              //Bread crumb script - Kevin Lynn Brown
+              //Duplicate directory names bug fix by JavaScriptKit.com
+              //Visit JavaScript Kit (http://javascriptkit.com) for script
+              
+              var path = "";
+              var href = document.location.href;
+              var s = href.split("/");
+              for (var i=2;i<(s.length-1);i++) {
+              path+="<A HREF=\""+href.substring(0,href.indexOf("/"+s[i])+s[i].length+1)+"/\">"+s[i]+"</A> / ";
+              }
+              i=s.length-1;
+              path+="<A HREF=\""+href.substring(0,href.indexOf(s[i])+s[i].length)+"\">"+s[i]+"</A>";
+              var url = window.location.protocol + "//" + path;
+              document.writeln(url);
+              //-->
+              </script>
 
 <main>
     <br>
@@ -77,5 +96,6 @@ mastered these four points before moving on to the next grade level.</div>
     <div></div><img class="pic" src="IconImages/Phone.png" alt="Phoneicon"/><img class="picbig" src="IconImages/Phone.png" alt="Phoneicon"/>888-888-8888
     <div>&copy;2021</div>
         </div>
+        <p align="left">This free script provided by <a href="http://javascriptkit.com">JavaScript Kit</a></p>
         </footer>
 </html>
