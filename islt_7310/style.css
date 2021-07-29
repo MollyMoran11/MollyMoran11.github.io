@@ -48,18 +48,22 @@ main p {text-indent: 2em;}
 }
 .table td {
     border: 1px solid black;
-    padding: 4px 4px;
+    padding: 10px 10px;
 }
 .table tr:nth-child(odd) td {
     background-color: #F58CE9;
 }
+form {
+    padding: 20px;
+    text-align: left;
+}
 .container {
     display: grid;
-    width: 960px;
+    width: 1200px;
     margin: 0px auto;
     grid-template-columns: 70% 10% 30%;
-    grid-template-rows: 10% 10% 40% 20% 30%;
-    gap: 170px 100px;
+    grid-template-rows: 10% 10% 20% 20% 10%;
+    gap: 150px 100px;
     grid-auto-flow: row;
     grid-template-areas:
     "header image"
@@ -75,7 +79,7 @@ main p {text-indent: 2em;}
 table {
     grid-area: nav;
     padding: 20px;
-    gap: 50px;
+    gap: 30px;
 }
 .Item3 {
     grid-area: image;
@@ -122,6 +126,7 @@ table {
     margin: 1in;
 }
 @media only screen and (max-width: 640px) {
+   .h1 {display: none;}  
     .container {
         display: grid;
         width: 640px;
