@@ -2,10 +2,17 @@
     <html lang="en-US">
                 <head>
                 <meta charset="utf-8">
-                   <title>Skip Counting Strategy</title>
+                <title>Contact Page</title>
                    <link rel="icon" type="image/x-icon" href="IconImages/favicon.png">
                    <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="nav.css">
+        <style>
+        label {
+            font-size: 20px;
+            font:bold;
+            text-align: center;
+        } 
+        </style>
             <style>
             .box {
                 background-image: url(IconImages/PinkFooter.jpg);
@@ -23,7 +30,7 @@
     width: 100px;
 }
             </style>
-                   <h1>Using Skip Counting to Multiply</h1>
+                   <h1>Contact</h1>
                    <nav>
                     <label id="hamburger">&#9776;</label>
                      <ul>
@@ -40,19 +47,29 @@
                  </ul>
                 </nav>
     <main>
-     <p>
-        <div> <strong>Strategy #2</strong></div>
-        <div>The second strategy we can use is skip counting. In skip counting
-            we look at the problem and decide which number we will skip count and the 
-            other number will be how many times we skip count until we stop. For example,
-            if we have the problem 5x3, I would choose 5 to skip count by and that means 
-            I need to do this 3 times. So I would skip count 5, 10, 15 and then stop at the third 
-            time. So the answer would be 15.
-            <p>Try it yourself! Practice how far you can skip count for each number 1-10.
-                You can use a piece of paper to keep track.
-            </p>
-        </div><br>
-        <img src="IconImages/MultiplicationExample2.jpg" alt="MultiplicationExample2" width="500" height="325">
+        <p>For more information or questions, please feel free to fill out 
+            this form. 
+        </p>
+    <form action="mailto:mollymoran11@yahoo.com?Subject=Educational%20Website%20Content" target="_top" method="POST" enctype="text/plain">
+        <div>
+        <label id="firstname">First Name</label>
+        <input type="text" name="name" id="name" required>
+        </div>
+        <div>
+            <label for="lastname">Last Name</label>
+        <input type="text" name="lastname" id="lastname" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+        <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label>Message</label>
+            <input>
+        </div>
+        <button>Reset</button>
+        <button>Submit</button>
+    </form>
     </main>
     <footer>
         <div class="box">
@@ -65,4 +82,4 @@
         <div>&copy;2021</div>
             </div>
             </footer>
-</html>
+    </html>
